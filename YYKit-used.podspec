@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary          = 'YYKit常用类'
 
   s.description      = <<-DESC
-    持续更新，避免导入所有YYKit文件
+    避免导入所有YYKit文件,持续更新
                        DESC
 
   s.homepage         = 'https://github.com/Iyongjie/YYKit-used.git'
