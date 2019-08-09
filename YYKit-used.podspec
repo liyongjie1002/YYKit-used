@@ -12,8 +12,14 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '李永杰' => 'iyongjie@yeah.net' }
   s.source           = { :git => 'https://github.com/Iyongjie/YYKit-used.git', :tag => s.version.to_s }
-
   s.ios.deployment_target = '8.0'
-  s.source_files = 'YYKit/**/*'
+
+  s.requires_arc = true
+  s.source_files = 'YYKit-used/**/*.{h,m}'
+  s.public_header_files = 'YYKit-used/**/*.{h}'
+
+  s.libraries = 'z', 'sqlite3'
+  s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
+  s.ios.vendored_frameworks = 'Vendor/WebP.framework'
 
 end
