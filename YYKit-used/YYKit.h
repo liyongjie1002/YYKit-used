@@ -16,7 +16,10 @@
 #import "UIColor+YYAdd.h"
 #import "UIImage+YYAdd.h"
 #import "UIDevice+YYAdd.h"
+#import "UIControl+YYAdd.h"
+#import "UITableView+YYAdd.h"
 #import "UIApplication+YYAdd.h"
+
 
 #import "NSData+YYAdd.h"
 #import "NSDate+YYAdd.h"
