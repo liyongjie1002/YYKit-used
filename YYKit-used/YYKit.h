@@ -20,7 +20,6 @@
 #import "UITableView+YYAdd.h"
 #import "UIApplication+YYAdd.h"
 
-
 #import "NSData+YYAdd.h"
 #import "NSDate+YYAdd.h"
 #import "NSArray+YYAdd.h"
@@ -30,6 +29,7 @@
 #import "NSNumber+YYAdd.h"
 
 #import "YYCGUtilities.h"
+#import "CALayer+YYAdd.h"
 
 #import "YYCache.h"
 #import "YYDiskCache.h"

@@ -73,6 +73,7 @@
 		B708DDDC22FD73B600EDDB94 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B708DDDA22FD73B600EDDB94 /* NSNumber+YYAdd.m */; };
 		B7312A842303F84A009F2BC3 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A822303F84A009F2BC3 /* UIControl+YYAdd.m */; };
 		B7312A872303FD76009F2BC3 /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A862303FD76009F2BC3 /* UITableView+YYAdd.m */; };
+		B7312A8A230401FA009F2BC3 /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A89230401FA009F2BC3 /* CALayer+YYAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -207,6 +208,8 @@
 		B7312A832303F84A009F2BC3 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
 		B7312A852303FD76009F2BC3 /* UITableView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YYAdd.h"; sourceTree = "<group>"; };
 		B7312A862303FD76009F2BC3 /* UITableView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YYAdd.m"; sourceTree = "<group>"; };
+		B7312A88230401FA009F2BC3 /* CALayer+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+YYAdd.h"; sourceTree = "<group>"; };
+		B7312A89230401FA009F2BC3 /* CALayer+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YYAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +395,8 @@
 		B708DD3422FD4F2B00EDDB94 /* Quartz */ = {
 			isa = PBXGroup;
 			children = (
+				B7312A88230401FA009F2BC3 /* CALayer+YYAdd.h */,
+				B7312A89230401FA009F2BC3 /* CALayer+YYAdd.m */,
 				B708DD3622FD4F2B00EDDB94 /* YYCGUtilities.h */,
 				B708DD3522FD4F2B00EDDB94 /* YYCGUtilities.m */,
 			);
@@ -602,6 +607,7 @@
 				B708DCFF22FD1C7600EDDB94 /* AppDelegate.m in Sources */,
 				B708DDB122FD713D00EDDB94 /* CALayer+YYWebImage.m in Sources */,
 				B708DD3A22FD4F2B00EDDB94 /* YYClassInfo.m in Sources */,
+				B7312A8A230401FA009F2BC3 /* CALayer+YYAdd.m in Sources */,
 				B708DDAE22FD713D00EDDB94 /* UIButton+YYWebImage.m in Sources */,
 				B708DD7D22FD4F9100EDDB94 /* YYTextRubyAnnotation.m in Sources */,
 				B708DDAB22FD713D00EDDB94 /* YYAnimatedImageView.m in Sources */,
