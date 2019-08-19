@@ -183,6 +183,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (nullable NSDate *)dateWithISOFormatString:(NSString *)dateString;
 
+#pragma mark 添加的方法
++(NSDate *)currentRealMonday;
+
 @end
 
 NS_ASSUME_NONNULL_END

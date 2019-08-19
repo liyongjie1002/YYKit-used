@@ -75,6 +75,10 @@
 		B7312A872303FD76009F2BC3 /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A862303FD76009F2BC3 /* UITableView+YYAdd.m */; };
 		B7312A8A230401FA009F2BC3 /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A89230401FA009F2BC3 /* CALayer+YYAdd.m */; };
 		B7312A8D230408D4009F2BC3 /* UIScrollView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A8B230408D3009F2BC3 /* UIScrollView+YYAdd.m */; };
+		B7E02388230A75CD00E17B53 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E02386230A75CD00E17B53 /* UIButton+Style.m */; };
+		B7E0238F230A856400E17B53 /* UIView+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238A230A856400E17B53 /* UIView+Function.m */; };
+		B7E02390230A856400E17B53 /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238B230A856400E17B53 /* UIView+Additional.m */; };
+		B7E02391230A856400E17B53 /* UIWebView+WebViewHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238D230A856400E17B53 /* UIWebView+WebViewHeight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -213,6 +217,14 @@
 		B7312A89230401FA009F2BC3 /* CALayer+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YYAdd.m"; sourceTree = "<group>"; };
 		B7312A8B230408D3009F2BC3 /* UIScrollView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YYAdd.m"; sourceTree = "<group>"; };
 		B7312A8C230408D4009F2BC3 /* UIScrollView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YYAdd.h"; sourceTree = "<group>"; };
+		B7E02386230A75CD00E17B53 /* UIButton+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
+		B7E02387230A75CD00E17B53 /* UIButton+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
+		B7E02389230A856400E17B53 /* UIView+Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Function.h"; sourceTree = "<group>"; };
+		B7E0238A230A856400E17B53 /* UIView+Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Function.m"; sourceTree = "<group>"; };
+		B7E0238B230A856400E17B53 /* UIView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additional.m"; sourceTree = "<group>"; };
+		B7E0238C230A856400E17B53 /* UIView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additional.h"; sourceTree = "<group>"; };
+		B7E0238D230A856400E17B53 /* UIWebView+WebViewHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+WebViewHeight.m"; sourceTree = "<group>"; };
+		B7E0238E230A856400E17B53 /* UIWebView+WebViewHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+WebViewHeight.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +366,14 @@
 		B708DD2E22FD4F2B00EDDB94 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B7E0238C230A856400E17B53 /* UIView+Additional.h */,
+				B7E0238B230A856400E17B53 /* UIView+Additional.m */,
+				B7E02389230A856400E17B53 /* UIView+Function.h */,
+				B7E0238A230A856400E17B53 /* UIView+Function.m */,
+				B7E0238E230A856400E17B53 /* UIWebView+WebViewHeight.h */,
+				B7E0238D230A856400E17B53 /* UIWebView+WebViewHeight.m */,
+				B7E02387230A75CD00E17B53 /* UIButton+Style.h */,
+				B7E02386230A75CD00E17B53 /* UIButton+Style.m */,
 				B7312A8C230408D4009F2BC3 /* UIScrollView+YYAdd.h */,
 				B7312A8B230408D3009F2BC3 /* UIScrollView+YYAdd.m */,
 				B7312A852303FD76009F2BC3 /* UITableView+YYAdd.h */,
@@ -424,24 +444,24 @@
 		B708DD4122FD4F9100EDDB94 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				B708DD4222FD4F9100EDDB94 /* YYTextSelectionView.h */,
-				B708DD4322FD4F9100EDDB94 /* YYTextLine.h */,
-				B708DD4422FD4F9100EDDB94 /* YYTextMagnifier.m */,
-				B708DD4522FD4F9100EDDB94 /* YYTextLayout.h */,
-				B708DD4622FD4F9100EDDB94 /* YYTextKeyboardManager.h */,
-				B708DD4722FD4F9100EDDB94 /* YYTextContainerView.m */,
-				B708DD4822FD4F9100EDDB94 /* YYTextEffectWindow.m */,
-				B708DD4922FD4F9100EDDB94 /* YYTextDebugOption.h */,
-				B708DD4A22FD4F9100EDDB94 /* YYTextInput.m */,
-				B708DD4B22FD4F9100EDDB94 /* YYTextLayout.m */,
-				B708DD4C22FD4F9100EDDB94 /* YYTextMagnifier.h */,
-				B708DD4D22FD4F9100EDDB94 /* YYTextLine.m */,
-				B708DD4E22FD4F9100EDDB94 /* YYTextSelectionView.m */,
-				B708DD4F22FD4F9100EDDB94 /* YYTextEffectWindow.h */,
 				B708DD5022FD4F9100EDDB94 /* YYTextContainerView.h */,
-				B708DD5122FD4F9100EDDB94 /* YYTextKeyboardManager.m */,
-				B708DD5222FD4F9100EDDB94 /* YYTextInput.h */,
+				B708DD4722FD4F9100EDDB94 /* YYTextContainerView.m */,
+				B708DD4922FD4F9100EDDB94 /* YYTextDebugOption.h */,
 				B708DD5322FD4F9100EDDB94 /* YYTextDebugOption.m */,
+				B708DD4F22FD4F9100EDDB94 /* YYTextEffectWindow.h */,
+				B708DD4822FD4F9100EDDB94 /* YYTextEffectWindow.m */,
+				B708DD5222FD4F9100EDDB94 /* YYTextInput.h */,
+				B708DD4A22FD4F9100EDDB94 /* YYTextInput.m */,
+				B708DD4622FD4F9100EDDB94 /* YYTextKeyboardManager.h */,
+				B708DD5122FD4F9100EDDB94 /* YYTextKeyboardManager.m */,
+				B708DD4522FD4F9100EDDB94 /* YYTextLayout.h */,
+				B708DD4B22FD4F9100EDDB94 /* YYTextLayout.m */,
+				B708DD4322FD4F9100EDDB94 /* YYTextLine.h */,
+				B708DD4D22FD4F9100EDDB94 /* YYTextLine.m */,
+				B708DD4C22FD4F9100EDDB94 /* YYTextMagnifier.h */,
+				B708DD4422FD4F9100EDDB94 /* YYTextMagnifier.m */,
+				B708DD4222FD4F9100EDDB94 /* YYTextSelectionView.h */,
+				B708DD4E22FD4F9100EDDB94 /* YYTextSelectionView.m */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -449,24 +469,24 @@
 		B708DD5622FD4F9100EDDB94 /* String */ = {
 			isa = PBXGroup;
 			children = (
-				B708DD5722FD4F9100EDDB94 /* YYTextAttribute.h */,
-				B708DD5822FD4F9100EDDB94 /* YYTextRunDelegate.m */,
-				B708DD5922FD4F9100EDDB94 /* YYTextUtilities.m */,
-				B708DD5A22FD4F9100EDDB94 /* NSParagraphStyle+YYText.m */,
-				B708DD5B22FD4F9100EDDB94 /* YYTextParser.m */,
-				B708DD5C22FD4F9100EDDB94 /* NSAttributedString+YYText.m */,
-				B708DD5D22FD4F9100EDDB94 /* UIPasteboard+YYText.m */,
-				B708DD5E22FD4F9100EDDB94 /* YYTextRubyAnnotation.h */,
-				B708DD5F22FD4F9100EDDB94 /* YYTextArchiver.h */,
-				B708DD6022FD4F9100EDDB94 /* YYTextUtilities.h */,
-				B708DD6122FD4F9100EDDB94 /* YYTextRunDelegate.h */,
-				B708DD6222FD4F9100EDDB94 /* YYTextAttribute.m */,
 				B708DD6322FD4F9100EDDB94 /* NSAttributedString+YYText.h */,
-				B708DD6422FD4F9100EDDB94 /* YYTextParser.h */,
+				B708DD5C22FD4F9100EDDB94 /* NSAttributedString+YYText.m */,
 				B708DD6522FD4F9100EDDB94 /* NSParagraphStyle+YYText.h */,
-				B708DD6622FD4F9100EDDB94 /* YYTextArchiver.m */,
-				B708DD6722FD4F9100EDDB94 /* YYTextRubyAnnotation.m */,
+				B708DD5A22FD4F9100EDDB94 /* NSParagraphStyle+YYText.m */,
 				B708DD6822FD4F9100EDDB94 /* UIPasteboard+YYText.h */,
+				B708DD5D22FD4F9100EDDB94 /* UIPasteboard+YYText.m */,
+				B708DD5F22FD4F9100EDDB94 /* YYTextArchiver.h */,
+				B708DD6622FD4F9100EDDB94 /* YYTextArchiver.m */,
+				B708DD5722FD4F9100EDDB94 /* YYTextAttribute.h */,
+				B708DD6222FD4F9100EDDB94 /* YYTextAttribute.m */,
+				B708DD6422FD4F9100EDDB94 /* YYTextParser.h */,
+				B708DD5B22FD4F9100EDDB94 /* YYTextParser.m */,
+				B708DD5E22FD4F9100EDDB94 /* YYTextRubyAnnotation.h */,
+				B708DD6722FD4F9100EDDB94 /* YYTextRubyAnnotation.m */,
+				B708DD6122FD4F9100EDDB94 /* YYTextRunDelegate.h */,
+				B708DD5822FD4F9100EDDB94 /* YYTextRunDelegate.m */,
+				B708DD6022FD4F9100EDDB94 /* YYTextUtilities.h */,
+				B708DD5922FD4F9100EDDB94 /* YYTextUtilities.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -568,6 +588,7 @@
 				B708DD3922FD4F2B00EDDB94 /* NSObject+YYModel.m in Sources */,
 				B708DDDC22FD73B600EDDB94 /* NSNumber+YYAdd.m in Sources */,
 				B708DD3D22FD4F2B00EDDB94 /* NSDate+YYAdd.m in Sources */,
+				B7E02390230A856400E17B53 /* UIView+Additional.m in Sources */,
 				B708DDA922FD713D00EDDB94 /* YYFrameImage.m in Sources */,
 				B708DD8A22FD50E600EDDB94 /* UIApplication+YYAdd.m in Sources */,
 				B708DD7022FD4F9100EDDB94 /* YYTextLine.m in Sources */,
@@ -575,11 +596,13 @@
 				B708DDAF22FD713D00EDDB94 /* UIImageView+YYWebImage.m in Sources */,
 				B708DDCA22FD72C100EDDB94 /* YYKVStorage.m in Sources */,
 				B708DDB222FD713D00EDDB94 /* YYWebImageManager.m in Sources */,
+				B7E02388230A75CD00E17B53 /* UIButton+Style.m in Sources */,
 				B708DD7522FD4F9100EDDB94 /* YYTextRunDelegate.m in Sources */,
 				B708DD8D22FD710F00EDDB94 /* YYImage.m in Sources */,
 				B708DDD322FD736400EDDB94 /* YYSentinel.m in Sources */,
 				B7312A842303F84A009F2BC3 /* UIControl+YYAdd.m in Sources */,
 				B708DDA822FD713D00EDDB94 /* YYSpriteSheetImage.m in Sources */,
+				B7E0238F230A856400E17B53 /* UIView+Function.m in Sources */,
 				B708DD7A22FD4F9100EDDB94 /* UIPasteboard+YYText.m in Sources */,
 				B708DD7C22FD4F9100EDDB94 /* YYTextArchiver.m in Sources */,
 				B708DDC822FD72C100EDDB94 /* YYCache.m in Sources */,
@@ -608,6 +631,7 @@
 				B708DDC722FD72C100EDDB94 /* YYDiskCache.m in Sources */,
 				B708DD7222FD4F9100EDDB94 /* YYTextKeyboardManager.m in Sources */,
 				B708DDBB22FD720D00EDDB94 /* NSObject+YYAdd.m in Sources */,
+				B7E02391230A856400E17B53 /* UIWebView+WebViewHeight.m in Sources */,
 				B708DD7B22FD4F9100EDDB94 /* YYTextAttribute.m in Sources */,
 				B708DCFF22FD1C7600EDDB94 /* AppDelegate.m in Sources */,
 				B708DDB122FD713D00EDDB94 /* CALayer+YYWebImage.m in Sources */,

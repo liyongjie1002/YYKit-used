@@ -185,4 +185,28 @@ YYSYNTH_DUMMY_CLASS(NSDate_YYAdd)
     return [formatter dateFromString:dateString];
 }
 
++(NSDate *)currentRealMonday {
+    NSDate *nowDate = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday  fromDate:nowDate];
+    // 获取今天是周几
+    NSInteger weekDay = [comp weekday];
+    // 获取几天是几号
+    NSInteger day = [comp day];
+    // 计算当前日期和本周的星期一和星期天相差天数
+    long firstDiff,lastDiff;
+    
+    if (weekDay == 1) {
+        firstDiff = -6;
+        lastDiff = 0;
+    }else {
+        firstDiff = [calendar firstWeekday] - weekDay + 1;
+        lastDiff = 8 - weekDay;
+    }
+    // 在当前日期(去掉时分秒)基础上加上差的天数
+    NSDateComponents *firstDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay  fromDate:nowDate];
+    [firstDayComp setDay:day + firstDiff];
+    NSDate *firstDayOfWeek = [calendar dateFromComponents:firstDayComp];
+    return firstDayOfWeek;
+}
 @end

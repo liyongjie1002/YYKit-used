@@ -1,11 +1,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYKit-used'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'YYKit常用类'
 
   s.description      = <<-DESC
-    避免导入所有YYKit文件,持续更新
+    避免导入所有YYKit文件,增加IPA的体积
                        DESC
 
   s.homepage         = 'https://github.com/Iyongjie/YYKit-used.git'
