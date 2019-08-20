@@ -6,7 +6,7 @@
 //  Copyright © 2018年 于朝盼. All rights reserved.
 //
 
-#import "NSDictionary+Addtional.h"
+#import "NSDictionary+Additional.h"
 #import "NSString+Additional.h"
 
 @implementation NSDictionary (Addtional)

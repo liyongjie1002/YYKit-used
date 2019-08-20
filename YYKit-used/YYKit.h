@@ -32,6 +32,9 @@
 #import "NSString+YYAdd.h"
 #import "NSObject+YYAdd.h"
 #import "NSNumber+YYAdd.h"
+#import "NSObject+Category.h"
+#import "NSString+Additional.h"
+#import "NSDictionary+Additional.h"
 
 #import "YYCGUtilities.h"
 #import "CALayer+YYAdd.h"
