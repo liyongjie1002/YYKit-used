@@ -201,4 +201,142 @@
     NSString *tmpDir = NSTemporaryDirectory();
     return tmpDir;
 }
+
+// url 参数
+- (NSMutableDictionary *)parseURLParameters {
+
+    // 查找参数
+    NSRange range = [self rangeOfString:@"?"];
+    if (range.location == NSNotFound) {
+        return nil;
+    }
+
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+
+    // 截取参数
+    NSString *parametersString = [self substringFromIndex:range.location + 1];
+
+    // 判断参数是单个参数还是多个参数
+    if ([parametersString containsString:@"&"]) {
+
+        // 多个参数，分割参数
+        NSArray *urlComponents = [parametersString componentsSeparatedByString:@"&"];
+
+        for (NSString *keyValuePair in urlComponents) {
+            // 生成Key/Value
+            NSArray *pairComponents = [keyValuePair componentsSeparatedByString:@"="];
+            NSString *key           = [pairComponents.firstObject stringByRemovingPercentEncoding];
+            NSString *value         = [pairComponents.lastObject stringByRemovingPercentEncoding];
+
+            // Key不能为nil
+            if (key == nil || value == nil) {
+                continue;
+            }
+
+            id existValue = [params valueForKey:key];
+
+            if (existValue != nil) {
+
+                // 已存在的值，生成数组
+                if ([existValue isKindOfClass:[NSArray class]]) {
+                    // 已存在的值生成数组
+                    NSMutableArray *items = [NSMutableArray arrayWithArray:existValue];
+                    [items addObject:value];
+
+                    [params setValue:items forKey:key];
+                } else {
+
+                    // 非数组
+                    [params setValue:@[ existValue, value ] forKey:key];
+                }
+
+            } else {
+
+                // 设置值
+                [params setValue:value forKey:key];
+            }
+        }
+    } else {
+        // 单个参数
+
+        // 生成Key/Value
+        NSArray *pairComponents = [parametersString componentsSeparatedByString:@"="];
+
+        // 只有一个参数，没有值
+        if (pairComponents.count == 1) {
+            return nil;
+        }
+
+        // 分隔值
+        NSString *key   = [pairComponents.firstObject stringByRemovingPercentEncoding];
+        NSString *value = [pairComponents.lastObject stringByRemovingPercentEncoding];
+
+        // Key不能为nil
+        if (key == nil || value == nil) {
+            return nil;
+        }
+
+        // 设置值
+        [params setValue:value forKey:key];
+    }
+
+    return params;
+}
+
+- (NSString *)deleteParameterForKey:(NSString *)key {
+    NSString *finalString = [NSString string];
+
+    if ([self containsString:key]) {
+        NSMutableString *mutStr = [NSMutableString stringWithString:self];
+        NSArray *strArray       = [mutStr componentsSeparatedByString:key];
+
+        NSMutableString *firstStr = [strArray objectAtIndex:0];
+        NSMutableString *lastStr  = [strArray lastObject];
+
+        NSRange characterRange = [lastStr rangeOfString:@"&"];
+
+        if (characterRange.location != NSNotFound) {
+            NSArray *lastArray       = [lastStr componentsSeparatedByString:@"&"];
+            NSMutableArray *mutArray = [NSMutableArray arrayWithArray:lastArray];
+            [mutArray removeObjectAtIndex:0];
+
+            NSString *modifiedStr = [mutArray componentsJoinedByString:@"&"];
+            finalString           = [[strArray objectAtIndex:0] stringByAppendingString:modifiedStr];
+        } else {
+            //以‘?‘、‘&‘结尾
+            finalString = [firstStr substringToIndex:[firstStr length] - 1];
+        }
+    } else {
+        finalString = self;
+    }
+
+    return finalString;
+}
+
+- (NSString *)addParameters:(NSDictionary *)parameters {
+    NSMutableArray *parts = [NSMutableArray array];
+
+    for (NSString *key in [parameters allKeys]) {
+        NSString *part = [NSString stringWithFormat:@"%@=%@", key, [parameters valueForKey:key]];
+        [parts addObject:part];
+    }
+
+    NSString *parametersString = [parts componentsJoinedByString:@"&"];
+
+    NSString *addSuffixString = @"";
+    if ([self hasParameter]) { // 原链接已经存在参数, 则用"&"直接拼接参数;
+        addSuffixString = [NSString stringWithFormat:@"%@%@", @"&", parametersString];
+    } else { // 原链接不存在参数, 则先添加"?", 再拼接参数;
+        addSuffixString = [NSString stringWithFormat:@"%@%@", @"?", parametersString];
+    }
+    
+    return [self stringByAppendingString:addSuffixString];
+}
+
+#pragma mark - Private Methods
+
+- (BOOL)hasParameter {
+    return [[self parseURLParameters] count] > 0;
+}
+
 @end

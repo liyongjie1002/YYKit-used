@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YYKit-used'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'YYKit常用类'
 
   s.description      = <<-DESC
