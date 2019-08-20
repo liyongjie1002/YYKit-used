@@ -79,6 +79,9 @@
 		B7E0238F230A856400E17B53 /* UIView+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238A230A856400E17B53 /* UIView+Function.m */; };
 		B7E02390230A856400E17B53 /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238B230A856400E17B53 /* UIView+Additional.m */; };
 		B7E02391230A856400E17B53 /* UIWebView+WebViewHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238D230A856400E17B53 /* UIWebView+WebViewHeight.m */; };
+		B7E02394230B9AA800E17B53 /* NSString+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E02392230B9AA800E17B53 /* NSString+Additional.m */; };
+		B7E02397230B9BB100E17B53 /* NSDictionary+Addtional.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E02396230B9BB000E17B53 /* NSDictionary+Addtional.m */; };
+		B7E0239A230B9C1E00E17B53 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E02398230B9C1D00E17B53 /* NSObject+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -225,6 +228,12 @@
 		B7E0238C230A856400E17B53 /* UIView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additional.h"; sourceTree = "<group>"; };
 		B7E0238D230A856400E17B53 /* UIWebView+WebViewHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+WebViewHeight.m"; sourceTree = "<group>"; };
 		B7E0238E230A856400E17B53 /* UIWebView+WebViewHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+WebViewHeight.h"; sourceTree = "<group>"; };
+		B7E02392230B9AA800E17B53 /* NSString+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additional.m"; sourceTree = "<group>"; };
+		B7E02393230B9AA800E17B53 /* NSString+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additional.h"; sourceTree = "<group>"; };
+		B7E02395230B9BB000E17B53 /* NSDictionary+Addtional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Addtional.h"; sourceTree = "<group>"; };
+		B7E02396230B9BB000E17B53 /* NSDictionary+Addtional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Addtional.m"; sourceTree = "<group>"; };
+		B7E02398230B9C1D00E17B53 /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		B7E02399230B9C1E00E17B53 /* NSObject+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,6 +408,12 @@
 		B708DD3122FD4F2B00EDDB94 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B7E02399230B9C1E00E17B53 /* NSObject+Category.h */,
+				B7E02398230B9C1D00E17B53 /* NSObject+Category.m */,
+				B7E02395230B9BB000E17B53 /* NSDictionary+Addtional.h */,
+				B7E02396230B9BB000E17B53 /* NSDictionary+Addtional.m */,
+				B7E02393230B9AA800E17B53 /* NSString+Additional.h */,
+				B7E02392230B9AA800E17B53 /* NSString+Additional.m */,
 				B708DDDB22FD73B600EDDB94 /* NSNumber+YYAdd.h */,
 				B708DDDA22FD73B600EDDB94 /* NSNumber+YYAdd.m */,
 				B708DDD722FD739F00EDDB94 /* NSData+YYAdd.h */,
@@ -593,6 +608,7 @@
 				B708DD8A22FD50E600EDDB94 /* UIApplication+YYAdd.m in Sources */,
 				B708DD7022FD4F9100EDDB94 /* YYTextLine.m in Sources */,
 				B708DD7622FD4F9100EDDB94 /* YYTextUtilities.m in Sources */,
+				B7E0239A230B9C1E00E17B53 /* NSObject+Category.m in Sources */,
 				B708DDAF22FD713D00EDDB94 /* UIImageView+YYWebImage.m in Sources */,
 				B708DDCA22FD72C100EDDB94 /* YYKVStorage.m in Sources */,
 				B708DDB222FD713D00EDDB94 /* YYWebImageManager.m in Sources */,
@@ -607,6 +623,7 @@
 				B708DD7C22FD4F9100EDDB94 /* YYTextArchiver.m in Sources */,
 				B708DDC822FD72C100EDDB94 /* YYCache.m in Sources */,
 				B708DDAD22FD713D00EDDB94 /* _YYWebImageSetter.m in Sources */,
+				B7E02394230B9AA800E17B53 /* NSString+Additional.m in Sources */,
 				B708DDA722FD713D00EDDB94 /* YYImageCache.m in Sources */,
 				B708DDD922FD739F00EDDB94 /* NSData+YYAdd.m in Sources */,
 				B708DD3B22FD4F2B00EDDB94 /* YYWeakProxy.m in Sources */,
@@ -643,6 +660,7 @@
 				B708DD6E22FD4F9100EDDB94 /* YYTextInput.m in Sources */,
 				B708DD7322FD4F9100EDDB94 /* YYTextDebugOption.m in Sources */,
 				B708DD7422FD4F9100EDDB94 /* YYLabel.m in Sources */,
+				B7E02397230B9BB100E17B53 /* NSDictionary+Addtional.m in Sources */,
 				B708DD7122FD4F9100EDDB94 /* YYTextSelectionView.m in Sources */,
 				B7312A8D230408D4009F2BC3 /* UIScrollView+YYAdd.m in Sources */,
 				B708DD8722FD50CD00EDDB94 /* UIDevice+YYAdd.m in Sources */,
