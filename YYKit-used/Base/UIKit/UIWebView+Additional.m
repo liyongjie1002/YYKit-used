@@ -1,14 +1,15 @@
 //
-//  UIWebView+WebViewHeight.m
+//  UIWebView+Additional.m
 //  MHDShop
 //
 //  Created by 李永杰 on 2019/4/17.
 //  Copyright © 2019 LWH. All rights reserved.
 //
 
-#import "UIWebView+WebViewHeight.h"
+#import "UIWebView+Additional.h"
 
-@implementation UIWebView (WebViewHeight)
+@implementation UIWebView (Additional)
+
 -(float)webHeight {
     
     NSString * clientheight_str = [self stringByEvaluatingJavaScriptFromString: @"document.body.offsetHeight"];

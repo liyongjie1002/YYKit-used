@@ -77,4 +77,11 @@ YYSYNTH_DUMMY_CLASS(UITableView_YYAdd)
     }];
 }
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    id view = [super hitTest:point withEvent:event];
+    if (![view isKindOfClass:[UITextField class]]) {
+        [self endEditing:YES];
+    }
+    return view;
+}
 @end

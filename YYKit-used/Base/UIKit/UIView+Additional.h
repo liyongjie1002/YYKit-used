@@ -62,19 +62,9 @@ typedef enum : NSUInteger { UIViewDashLineDirectionHorizontal = 0, UIViewDashLin
  @param width 边框宽度
  */
 - (void)setBorderWithtop:(BOOL)top left:(BOOL)left bottom:(BOOL)bottom right:(BOOL)right borderColor:(UIColor *)color borderWidth:(CGFloat)width;
-#pragma mark - UILabel
 
+#pragma mark - UILabel
 //设置label行间距
 + (void)setRowSpace:(UILabel *)label lineSpacing:(CGFloat)lineSpacing;
-
-#pragma mark - UIButton
-
-//设置button属性
-+ (void)setButton:(UIButton *)button
-        AddTxtColor:(UIColor *)textColor
-    backgroundColor:(UIColor *)backColor
-          labelText:(NSString *)text
-      textAlignment:(NSTextAlignment)alignment
-          labelFont:(UIFont *)font;
 
 @end

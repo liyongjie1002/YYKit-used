@@ -1,14 +1,14 @@
 //
-//  UIButton+Style.m
-//  MHDHome
+//  UIButton+Additional.m
+//  Demo
 //
-//  Created by 李永杰 on 2019/6/26.
+//  Created by 李永杰 on 2019/8/23.
 //  Copyright © 2019 muheda. All rights reserved.
 //
 
-#import "UIButton+Style.h"
+#import "UIButton+Additional.h"
 
-@implementation UIButton (Style)
+@implementation UIButton (Additional)
 
 - (void)layoutButtonWithEdgeInsetsStyle:(MDButtonEdgeInsetsStyle)style imageTitleSpace:(CGFloat)space {
 
@@ -51,6 +51,16 @@
 
     self.titleEdgeInsets = labelEdgeInsets;
     self.imageEdgeInsets = imageEdgeInsets;
+}
+
+//扩大button点击热区
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    CGRect bounds = self.bounds;
+    //若原热区小于44x44，则放大热区，否则保持原大小不变
+    CGFloat widthDelta  = MAX(44.0 - bounds.size.width, 0);
+    CGFloat heightDelta = MAX(44.0 - bounds.size.height, 0);
+    bounds              = CGRectInset(bounds, -0.5 * widthDelta, -0.5 * heightDelta);
+    return CGRectContainsPoint(bounds, point);
 }
 
 @end

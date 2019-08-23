@@ -123,7 +123,6 @@
         [self.layer addSublayer:layer];
     }
 }
-#pragma mark-- UILabel
 
 + (void)setRowSpace:(UILabel *)label lineSpacing:(CGFloat)lineSpacing {
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:label.text];
@@ -132,42 +131,5 @@
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [label.text length])];
     label.attributedText = attributedString;
 }
-#pragma mark - UIButton
 
-+ (void)setButton:(UIButton *)button
-        AddTxtColor:(UIColor *)textColor
-    backgroundColor:(UIColor *)backColor
-          labelText:(NSString *)text
-      textAlignment:(NSTextAlignment)alignment
-          labelFont:(UIFont *)font {
-    button.backgroundColor = backColor;
-    [button setTitleColor:textColor forState:UIControlStateNormal];
-    [button setTitle:text forState:UIControlStateNormal];
-    button.titleLabel.textAlignment = alignment;
-    button.titleLabel.font          = font;
-}
-@end
-
-@implementation UIButton (Additional)
-
-//扩大button点击热区
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-    CGRect bounds = self.bounds;
-    //若原热区小于44x44，则放大热区，否则保持原大小不变
-    CGFloat widthDelta  = MAX(44.0 - bounds.size.width, 0);
-    CGFloat heightDelta = MAX(44.0 - bounds.size.height, 0);
-    bounds              = CGRectInset(bounds, -0.5 * widthDelta, -0.5 * heightDelta);
-    return CGRectContainsPoint(bounds, point);
-}
-
-@end
-
-@implementation UITableView (ResignEditing)
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    id view = [super hitTest:point withEvent:event];
-    if (![view isKindOfClass:[UITextField class]]) {
-        [self endEditing:YES];
-    }
-    return view;
-}
 @end

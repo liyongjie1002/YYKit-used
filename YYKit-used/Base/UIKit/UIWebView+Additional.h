@@ -1,5 +1,5 @@
 //
-//  UIWebView+WebViewHeight.h
+//  UIWebView+Additional.h
 //  MHDShop
 //
 //  Created by 李永杰 on 2019/4/17.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIWebView (WebViewHeight)
+@interface UIWebView (Additional)
+
 -(float)webHeight;
 
 @end
- 
+

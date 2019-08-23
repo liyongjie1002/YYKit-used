@@ -10,8 +10,10 @@
 #import <UIKit/UIKit.h>
 @interface NSObject (Category)
 
+// 当前window的根视图控制器
 - (UIViewController *)getCurrentVC;
 
+// 根视图控制器最顶层VC
 - (UIViewController *)getCurrentUIVC;
 
 @end

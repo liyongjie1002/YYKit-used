@@ -6,7 +6,7 @@
 //  Copyright © 2018年 于朝盼. All rights reserved.
 //
 
-#import "NSObject+Category.h"
+#import "NSObject+CurrentVC.h"
 
 @implementation NSObject (Category)
 
