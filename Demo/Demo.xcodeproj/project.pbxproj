@@ -76,6 +76,7 @@
 		B7312A8A230401FA009F2BC3 /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A89230401FA009F2BC3 /* CALayer+YYAdd.m */; };
 		B7312A8D230408D4009F2BC3 /* UIScrollView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7312A8B230408D3009F2BC3 /* UIScrollView+YYAdd.m */; };
 		B75FDD91230FE12F00D5D239 /* UIButton+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B75FDD90230FE12F00D5D239 /* UIButton+Additional.m */; };
+		B7CDC95D2326724A006CBF2E /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CDC95C2326724A006CBF2E /* NSDictionary+YYAdd.m */; };
 		B7E0238F230A856400E17B53 /* UIView+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238A230A856400E17B53 /* UIView+Function.m */; };
 		B7E02390230A856400E17B53 /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238B230A856400E17B53 /* UIView+Additional.m */; };
 		B7E02391230A856400E17B53 /* UIWebView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E0238D230A856400E17B53 /* UIWebView+Additional.m */; };
@@ -222,6 +223,8 @@
 		B7312A8C230408D4009F2BC3 /* UIScrollView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YYAdd.h"; sourceTree = "<group>"; };
 		B75FDD8F230FE12F00D5D239 /* UIButton+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Additional.h"; sourceTree = "<group>"; };
 		B75FDD90230FE12F00D5D239 /* UIButton+Additional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Additional.m"; sourceTree = "<group>"; };
+		B7CDC95B2326724A006CBF2E /* NSDictionary+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YYAdd.h"; sourceTree = "<group>"; };
+		B7CDC95C2326724A006CBF2E /* NSDictionary+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YYAdd.m"; sourceTree = "<group>"; };
 		B7E02389230A856400E17B53 /* UIView+Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Function.h"; sourceTree = "<group>"; };
 		B7E0238A230A856400E17B53 /* UIView+Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Function.m"; sourceTree = "<group>"; };
 		B7E0238B230A856400E17B53 /* UIView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additional.m"; sourceTree = "<group>"; };
@@ -408,6 +411,8 @@
 		B708DD3122FD4F2B00EDDB94 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B7CDC95B2326724A006CBF2E /* NSDictionary+YYAdd.h */,
+				B7CDC95C2326724A006CBF2E /* NSDictionary+YYAdd.m */,
 				B7E02399230B9C1E00E17B53 /* NSObject+CurrentVC.h */,
 				B7E02398230B9C1D00E17B53 /* NSObject+CurrentVC.m */,
 				B7E02395230B9BB000E17B53 /* NSDictionary+Additional.h */,
@@ -622,6 +627,7 @@
 				B708DD7A22FD4F9100EDDB94 /* UIPasteboard+YYText.m in Sources */,
 				B708DD7C22FD4F9100EDDB94 /* YYTextArchiver.m in Sources */,
 				B708DDC822FD72C100EDDB94 /* YYCache.m in Sources */,
+				B7CDC95D2326724A006CBF2E /* NSDictionary+YYAdd.m in Sources */,
 				B708DDAD22FD713D00EDDB94 /* _YYWebImageSetter.m in Sources */,
 				B7E02394230B9AA800E17B53 /* NSString+Additional.m in Sources */,
 				B708DDA722FD713D00EDDB94 /* YYImageCache.m in Sources */,
